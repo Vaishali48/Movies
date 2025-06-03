@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>movie website</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1 class="logo">CineTalk</h1>
+      </div>
+      <div class="menu-container">
+        <a href="#home" id="home" class="menu-list-item active">Home</a>
+        <a href="#movies" class="menu-list-item ">Movies</a>
+        <a href="#series" class="menu-list-item ">Series</a>
+        <a href="#popular" class="menu-list-item ">Popular</a>
+        <a href="#trends" class="menu-list-item ">Trends</a>
+      </div>
+      <div class="profile-container">
+        <a href="#" id="login-top" class="left-menu-icon fas fa-user"></a>
+        <div class="profile-text-container">
+          <span class="profile-text">Profile</span>
+          <i class="fas fa-caret-down"></i>
+        </div>
+        
+        <div class="toggle">
+          <i class="fas fa-moon toggle-icon"></i>
+          <i class="fas fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar end -->
+  <!-- side bar start -->
+
+  <div class="sidebar">
+    <a href="#" id="searchIcon" class="left-menu-icon fas fa-search"></a>
+    <a href="#" id="home" class="left-menu-icon fas fa-home"></a>
+    <a href="#" id="sidebar-login" class="left-menu-icon fas fa-user"></a>
+    <a href="#" class="left-menu-icon fas fa-bookmark"></a>
+  </div>
+  <form action="" class="login-form" id="login-form" style="display: none;">
+    <h3>login form</h3>
+    <input type="email" placeholder="enter your email" class="box">
+    <input type="password" placeholder="enter your password" class="box">
+    <div class="remember">
+      <input type="checkbox" name="" id="remember-me">
+      <label for="remember-me">remember me</label>
+    </div>
+    <input type="submit" value="login" class="btn">
+  </form>
+
+
+  <input type="text" id="searchBar" placeholder="Search..." class="hiden">
+  <div class="container">
+    <div class="content-container">
+      <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/first.jpeg');">
+      </div>
+      <div class="movie-list-container">
+        <h1 class="movie-list-title" id="movies">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+          <div class="movie-list">
+            <div class="movie-list-item" data-name="udamn cho">
+              <img class="movie-list-item-img" src="img/r1.jpeg" alt="">
+              <span class="movie-list-item-title">Udan choo</span>
+              <p class="movie-list-item-desc">Udan Chhoo is a Gujarati comedy drama film</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item" data-name="Brahmastra">
+              <img class="movie-list-item-img" src="img/r2.jpeg" alt="">
+              <span class="movie-list-item-title">Brahmastra</span>
+              <p class="movie-list-item-desc">Brahmastra: Part One-Shiva is a 2022 Indian Hindi-language fantasy action-adventure film written and directed by Ayan Mukerji, dialogues written by Hussain Dalal</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item" data-name="super 30">
+              <img class="movie-list-item-img" src="img/r3.jpeg" alt="">
+              <span class="movie-list-item-title">Super 30</span>
+              <p class="movie-list-item-desc">Anand Kumar, a mathematician from Patna, India, works his way through challenges towards success before running the Super 30 programme for IIT aspirants in Patna</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/r6.jpeg" alt="" >
+              <span class="movie-list-item-title">Bajrangi Bhaijan </span>
+              
+              <p class="movie-list-item-desc">An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family.
+               </p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/5.jpg" alt="">
+              <span class="movie-list-item-title">Avengers</span>
+              <p class="movie-list-item-desc">The Avengers is a blockbuster superhero film franchise produced by Marvel Studios and based on the Marvel Comics superhero team of the same name.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/ye.jpg" alt="">
+              <span class="movie-list-item-title">Yeh Jawani hai Deewani</span>
+              <p class="movie-list-item-desc">indifference towards your friends can create distances.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/fa.jpg" alt="">
+              <span class="movie-list-item-title">The Family Star</span>
+              <p class="movie-list-item-desc">Govardhan, a devoted architect from Hyderabad, juggles supporting his extended family while seeking a partner who understands his commitments.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </div>
+      </div>
+
+      <!-- second part -->
+      <div class="movie-list-container">
+        <h1 class="movie-list-title" id="series">SERIES</h1>
+        <div class="movie-list-wrapper">
+          <div class="movie-list">
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/8.jpg" alt="">
+              <span class="movie-list-item-title">Oblivion</span>
+              <p class="movie-list-item-desc">revolves around a world on the brink of destruction or facing a dangerous invasion.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/9.jpg" alt="">
+              <span class="movie-list-item-title">The Hobbit</span>
+              <p class="movie-list-item-desc">The journey takes Bilbo on a path through treacherous lands swarming with orcs, goblins and other dangers.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/10.jpg" alt="">
+              <span class="movie-list-item-title">Due Date</span>
+              <p class="movie-list-item-desc">focuses on a journalist, James Alden, who becomes captivated by the case of Natalie Varga, who is accused of murdering her husband. </p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/11.jpg" alt="">
+              <span class="movie-list-item-title">Kick-Ass 2</span>
+              <p class="movie-list-item-desc">begins after the events of the first film, where Kick-Ass's heroics inspire a new wave of masked vigilantes. </p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/12.jpg" alt="">
+              <span class="movie-list-item-title">The Emoji Movie</span>
+              <p class="movie-list-item-desc">a couple who is being pulled apart not because of misunderstanding, but because they have excessive understanding.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+              <span class="movie-list-item-title">Her</span>
+              <p class="movie-list-item-desc">explores the theme of human connection, love, and the blurring lines between human and artificial intelligence.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/4.jpg" alt="">
+              <span class="movie-list-item-title">1917</span>
+              <p class="movie-list-item-desc">focuses on two young British soldiers, Lance Corporal Schofield and Private Blake, during World War I.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </div>
+      </div>
+      <!-- features -->
+      <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+        <img class="featured-title" src="img/f-t-2.png" alt="">
+        <p class="featured-desc">It follows the interwoven stories of four families in the fictional town of Winden, Germany, as they grapple with the disappearance of two children and uncover a sinister time travel conspiracy.</p>
+        <button class="featured-button">WATCH</button>
+      </div>
+      <div class="movie-list-container" id="popular">
+        <h1 class="movie-list-title">POPULAR</h1>
+        <div class="movie-list-wrapper">
+          <div class="movie-list">
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+              <span class="movie-list-item-title">Her</span>
+              <p class="movie-list-item-desc">explores the theme of human connection, love, and the blurring lines between human and artificial intelligence.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/we.jpg" alt="">
+              <span class="movie-list-item-title">Wednesday</span>
+              <p class="movie-list-item-desc">The series follows Wednesday Addams, a troublesome kid sent off to Nevermore Academy where her parents went.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/on.jpg" alt="">
+              <span class="movie-list-item-title">One of Us Is Lying</span>
+              <p class="movie-list-item-desc">follows five Bayview High students who find themselves in detention one day, only to discover that one of them, Simon, has died suddenly. </p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/3.jpg" alt="">
+              <span class="movie-list-item-title">Storm</span>
+              <p class="movie-list-item-desc">During the Reformation, Klaas Voeten, a printer of forbidden literature, is caught by the Inquisition for printing a letter written by Martin Luther. </p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/4.jpg" alt="">
+              <span class="movie-list-item-title">1917</span>
+              <p class="movie-list-item-desc">focuses on two young British soldiers, Lance Corporal Schofield and Private Blake, during World War I.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/5.jpg" alt="">
+              <span class="movie-list-item-title">Avengers</span>
+              <p class="movie-list-item-desc">The Avengers is a blockbuster superhero film franchise produced by Marvel Studios and based on the Marvel Comics superhero team of the same name.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/8.jpg" alt="">
+              <span class="movie-list-item-title">Oblivion</span>
+              <p class="movie-list-item-desc">revolves around a world on the brink of destruction or facing a dangerous invasion.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </div>
+      </div>
+      <div class="movie-list-container" id="trends">
+        <h1 class="movie-list-title">Trends</h1>
+        <div class="movie-list-wrapper">
+          <div class="movie-list">
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/17.jpg" alt="">
+              <span class="movie-list-item-title">Aquaman</span>
+              <p class="movie-list-item-desc">A half-Atlantean, half-human who is reluctant to be king of the underwater kingdom of Atlantis.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/pu.jpg" alt="">
+              <span class="movie-list-item-title">Puss in Boots</span>
+              <p class="movie-list-item-desc">the importance of strong friendships.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/sp.jpg" alt="">
+              <span class="movie-list-item-title">Spiderman</span>
+              <p class="movie-list-item-desc">A bite from a spider somehow granted teenager Peter Parker its arachnid abilities and instead of using them for personal gain, he decided to help others with them. </p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/q.jpg" alt="">
+              <span class="movie-list-item-title">Quantumania</span>
+              <p class="movie-list-item-desc">Ant-Man and the Wasp find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that pushes them beyond the limits of what they thought was possible.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/4.jpg" alt="">
+              <span class="movie-list-item-title">1917</span>
+              <p class="movie-list-item-desc">focuses on two young British soldiers, Lance Corporal Schofield and Private Blake, during World War I.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/we.jpg" alt="">
+              <span class="movie-list-item-title">Wednesday</span>
+              <p class="movie-list-item-desc">The series follows Wednesday Addams, a troublesome kid sent off to Nevermore Academy where her parents went.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/5.jpg" alt="">
+              <span class="movie-list-item-title">Avengers</span>
+              <p class="movie-list-item-desc">The Avengers is a blockbuster superhero film franchise produced by Marvel Studios and based on the Marvel Comics superhero team of the same name.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>CineTalk</h2>
+      <p>Your source for movies, series & trends.</p>
+      <p>to stay updated with what’s hot and what’s new.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#series">Series</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#trends">Trends</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@cinetalk.com</p>
+      <p>Phone: +1 234 567 8901</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CineTalk. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </div>
+  
+
+
+</body>
+
+</html>
+
+
+
+
+
